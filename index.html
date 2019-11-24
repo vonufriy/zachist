@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Захист</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="polibius panel">
+        <label for="lang_selector">Виберіть мову:</label>
+        <select name="lang_selector" id="lang_selector">
+            <option value="ru" selected>Руська</option>
+            <option value="ua">Українська</option>
+            <option value="lt">Латинська</option>
+        </select>
+        <div id="input_wrapper">
+            <input type="text" name="str_input" id="str_input">
+        </div>
+        <div id="output" class="output">
+
+        </div>
+    </div> 
+    <div class="grons panel">
+        <label for="lang_selector_g">Виберіть мову:</label>
+        <select name="lang_selector_g" id="lang_selector_g">
+            <option value="ru" selected>Руська</option>
+            <option value="ua">Українська</option>
+            <option value="lt">Латинська</option>
+        </select>
+        <div id="input_wrapper_g">
+            <input type="text" name="str_input_g" id="str_input_g">
+            <input type="text" name="code_input_g" id="code_input_g">
+            <button type="button" id="submit_g">
+                Шифрувати
+            </button>
+        </div>
+        <div id="output_g" class="output">
+
+        </div>
+    </div>
+    <script src="polibius.js"></script>
+    <script src="grons.js"></script>
+</body>
+</html>
