@@ -26,7 +26,7 @@ function pol_encode(str) {
         for (var i = 0; i < kv[checked_lang].length; i++) {
             idx = kv[checked_lang][i].indexOf(str.charAt(j));
             if (idx >= 0) {
-                res += " " + ( i + 1 ) + "" + (idx + 1);
+                res += " " + i + "" + idx;
                 break;
             }
         }
