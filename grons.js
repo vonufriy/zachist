@@ -39,7 +39,6 @@ button.addEventListener('click',function(){
     output_g.innerText = r;
 });
 
-
 selector_g.addEventListener('change',function(e){
-    checked_lang_g =  e.target.value;
+        checked_lang_g =  e.target.value;
 });
