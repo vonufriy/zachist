@@ -1,5 +1,5 @@
 var checked_lang_g= 'ua';
-function crypt(message, key, decrypt) {
+function encode(message, key) {
 
     var a = {
         lt:   ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "V", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "v", "x", "y", "z"],
@@ -18,8 +18,6 @@ function crypt(message, key, decrypt) {
 
         key.push(b);
 
-        decrypt ? (i -= b, i < 0 && (i += a[checked_lang_g].length)) : (i += b, i %= a[checked_lang_g].length);
-
         return message + a[checked_lang_g][i]
 
     }, "")
@@ -34,7 +32,7 @@ var button = document.getElementById('submit_g'),
 
 
 button.addEventListener('click',function(){
-    var r = crypt(str_in.value,code_in.value);
+    var r = encode(str_in.value,code_in.value);
     output_g.innerText = r;
 });
 

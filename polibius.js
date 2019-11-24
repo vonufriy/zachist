@@ -1,10 +1,10 @@
 var kv = {
-    lt:  [
+    lt:[
         ["A", "B", "C", "D", "E"],
         ["F", "G", "H", "I", "K"],
         ["L", "M", "N", "O", "P"],
-        ["Q", "R", "S", "T", "V"],
-        ["X", "Y", "Z", ",", "."]
+        ["Q", "R", "S", "T", "U"],
+        ["V", "W", "X", "Y", "Z"]
     ],
     ua: [
         ["А", "Б", "В", "Г", "Ґ", "Д"],
@@ -18,7 +18,7 @@ var kv = {
 var checked_lang= 'ua';
 
 
-function pol_encode(str) {
+function encode(str) {
     var idx;
     var res = "";
     str = str.toUpperCase();
@@ -41,7 +41,7 @@ var input = document.getElementById('str_input'),
     selector = document.getElementById('lang_selector');
     
 input.addEventListener('keyup',function(e){
-    var r = pol_encode(e.target.value);
+    var r = encode(e.target.value);
     output.innerText = r;
 });
 
