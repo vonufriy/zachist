@@ -23,7 +23,7 @@ var kv = {
         ["Э", "Ю", "Я", ",", ".", "-"]
     ]
 }
-var checked_lang= 'ru';
+var checked_lang= 'ua';
 
 
 function pol_encode(str) {

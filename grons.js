@@ -1,4 +1,4 @@
-var checked_lang_g= 'ru';
+var checked_lang_g= 'ua';
 function crypt(message, key, decrypt) {
 
     var a = {

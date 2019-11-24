@@ -8,31 +8,46 @@
 </head>
 <body>
     <div class="polibius panel">
-        <label for="lang_selector">Виберіть мову:</label>
-        <select name="lang_selector" id="lang_selector">
-            <option value="ru" selected>Руська</option>
-            <option value="ua">Українська</option>
-            <option value="lt">Латинська</option>
-        </select>
-        <div id="input_wrapper">
-            <input type="text" name="str_input" id="str_input">
+        <h2>Шифр Полібія</h2>
+        <div class="form_row">
+            <label for="lang_selector">Виберіть мову:</label>
+            <select name="lang_selector" id="lang_selector">
+                <option value="ua" selected>Українська</option>
+                <option value="ru">Російська</option>
+                <option value="lt">Латинська</option>
+            </select>
         </div>
-        <div id="output" class="output">
-
+        <div class="form_row">
+            <div id="input_wrapper" class="input_wrapper">
+                    <label for="text">Введіть текст:</label>
+                    <input type="text" name="str_input" id="str_input">
+            </div>
+            <div id="output" class="output">
+    
+            </div>
         </div>
     </div> 
     <div class="grons panel">
-        <label for="lang_selector_g">Виберіть мову:</label>
-        <select name="lang_selector_g" id="lang_selector_g">
-            <option value="ru" selected>Руська</option>
-            <option value="ua">Українська</option>
-            <option value="lt">Латинська</option>
-        </select>
-        <div id="input_wrapper_g">
-            <input type="text" name="str_input_g" id="str_input_g">
+        <h2>Шифр Гронсфельда</h2>
+        <div class="form_row">
+            <label for="lang_selector_g">Виберіть мову:</label>
+            <select name="lang_selector_g" id="lang_selector_g">
+                <option value="ua" selected>Українська</option>
+                <option value="ru">Російська</option>
+                <option value="lt">Латинська</option>
+            </select>
+        </div>
+        <div class="form_row">
+            <label for="text">Введіть текст:</label>
+            <input type="text" name="str_input_g" id="str_input_g">    
+        </div>
+        <div class="form_row">
+            <label for="text">Введіть код:</label>
             <input type="text" name="code_input_g" id="code_input_g">
-            <button type="button" id="submit_g">
-                Шифрувати
+        </div>
+        <div class="form_row">
+            <button type="button" id="submit_g" class="submit">
+                    Шифрувати
             </button>
         </div>
         <div id="output_g" class="output">

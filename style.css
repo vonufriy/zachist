@@ -3,7 +3,34 @@
     margin: 10px;
     box-shadow: 1px 1px 4px #333;
 }
+.panel label {
+    font-size: 20px;
+    font-weight: 500;
+}
 .output {
     padding: 10px;
     margin: 15px auto;
+}
+input, select {
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    padding: .375rem .75rem;
+}
+.form_row {
+    margin: 10px 0;
+}
+button.submit{
+    background-color: #0062cc;
+    color: #fff;
+    outline: none;
+    padding: .375rem .75rem;
+    box-shadow: none;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-size: 18px;
+}
+button.submit:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    cursor: pointer;
 }
